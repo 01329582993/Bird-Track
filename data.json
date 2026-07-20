@@ -1,0 +1,49 @@
+{
+  "project": {
+    "title": "Bird Image Classification",
+    "subtitle": "HOG & Color Histogram features → SVM, k-NN, Decision Tree & Random Forest",
+    "weeks": 6
+  },
+  "members": [
+    { "id": "m1", "name": "Team Member 1", "role": "Dataset & Preprocessing Lead", "initial": "1", "accent": "rust" },
+    { "id": "m2", "name": "Team Member 2", "role": "Feature Extraction Lead", "initial": "2", "accent": "sage" },
+    { "id": "m3", "name": "Team Member 3", "role": "Modeling & Evaluation Lead", "initial": "3", "accent": "slate" }
+  ],
+  "phases": [
+    { "n": 1, "name": "Dataset" },
+    { "n": 2, "name": "Preprocessing" },
+    { "n": 3, "name": "Feature Extraction" },
+    { "n": 4, "name": "Machine Learning" },
+    { "n": 5, "name": "Evaluation" },
+    { "n": 6, "name": "Documentation" }
+  ],
+  "tasks": [
+    { "id": "m1-p1-1", "member": "m1", "phase": 1, "week": 1, "title": "Collect bird image dataset", "done": false },
+    { "id": "m1-p1-2", "member": "m1", "phase": 1, "week": 1, "title": "Organize images into class folders", "done": false },
+    { "id": "m1-p2-1", "member": "m1", "phase": 2, "week": 2, "title": "Resize and normalize images", "done": false },
+    { "id": "m1-p2-2", "member": "m1", "phase": 2, "week": 2, "title": "Split into train/test sets", "done": false },
+    { "id": "m1-p5-1", "member": "m1", "phase": 5, "week": 5, "title": "Generate confusion matrices", "done": false },
+    { "id": "m1-p6-1", "member": "m1", "phase": 6, "week": 6, "title": "Write dataset & preprocessing section", "done": false },
+
+    { "id": "m2-p2-1", "member": "m2", "phase": 2, "week": 2, "title": "Convert images to grayscale", "done": false },
+    { "id": "m2-p3-1", "member": "m2", "phase": 3, "week": 3, "title": "Extract HOG features", "done": false },
+    { "id": "m2-p3-2", "member": "m2", "phase": 3, "week": 3, "title": "Extract color histogram features", "done": false },
+    { "id": "m2-p3-3", "member": "m2", "phase": 3, "week": 3, "title": "Combine and normalize feature vectors", "done": false },
+    { "id": "m2-p5-1", "member": "m2", "phase": 5, "week": 5, "title": "Compare feature importance across models", "done": false },
+    { "id": "m2-p6-1", "member": "m2", "phase": 6, "week": 6, "title": "Write feature extraction section", "done": false },
+
+    { "id": "m3-p4-1", "member": "m3", "phase": 4, "week": 4, "title": "Train SVM classifier", "done": false },
+    { "id": "m3-p4-2", "member": "m3", "phase": 4, "week": 4, "title": "Train k-NN classifier", "done": false },
+    { "id": "m3-p4-3", "member": "m3", "phase": 4, "week": 4, "title": "Train Decision Tree classifier", "done": false },
+    { "id": "m3-p4-4", "member": "m3", "phase": 4, "week": 4, "title": "Train Random Forest classifier", "done": false },
+    { "id": "m3-p5-1", "member": "m3", "phase": 5, "week": 5, "title": "Evaluate accuracy, precision, recall, F1", "done": false },
+    { "id": "m3-p6-1", "member": "m3", "phase": 6, "week": 6, "title": "Write modeling & evaluation section", "done": false }
+  ],
+  "shared": [
+    { "id": "s-1", "title": "Set up shared GitHub repository", "week": 1, "done": false },
+    { "id": "s-2", "title": "Agree on final class labels", "week": 1, "done": false },
+    { "id": "s-3", "title": "Weekly sync meeting notes", "week": 3, "done": false },
+    { "id": "s-4", "title": "Prepare final presentation slides", "week": 6, "done": false },
+    { "id": "s-5", "title": "Proofread and submit final report", "week": 6, "done": false }
+  ]
+}
