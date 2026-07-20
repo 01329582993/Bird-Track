@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bird Image Classification — Field Log</title>
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="hero">
+  <div class="hero__watermark" aria-hidden="true">
+    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20 120 Q40 60 100 55 Q95 40 115 35 Q135 30 150 45 Q160 30 175 32 Q168 48 155 55 Q175 60 180 78 Q160 72 148 78 Q160 95 150 115 Q135 90 108 88 Q120 110 100 135 Q95 112 78 100 Q60 130 25 135 Q35 122 20 120 Z" />
+    </svg>
+  </div>
+
+  <div class="hero__inner">
+    <p class="eyebrow">Field Log №04 — Shared Specimen Catalog</p>
+    <h1 id="project-title" class="hero__title">Bird Image Classification</h1>
+    <p id="project-subtitle" class="hero__subtitle">HOG &amp; Color Histogram features → SVM, k-NN, Decision Tree &amp; Random Forest</p>
+
+    <div class="hero__stats">
+      <div class="stamp-tag" id="overall-stamp">
+        <span class="stamp-tag__pct" id="overall-pct">0%</span>
+        <span class="stamp-tag__label">catalogued</span>
+      </div>
+      <div class="hero__chips" id="member-chips"></div>
+    </div>
+  </div>
+</header>
+
+<nav class="controls">
+  <div class="controls__inner">
+    <div class="view-toggle" id="view-toggle" role="tablist" aria-label="Choose how to view tasks">
+      <button class="view-toggle__btn is-active" data-view="member" role="tab" aria-selected="true">By Member</button>
+      <button class="view-toggle__btn" data-view="phase" role="tab" aria-selected="false">By Phase</button>
+      <button class="view-toggle__btn" data-view="week" role="tab" aria-selected="false">By Week</button>
+    </div>
+
+    <div class="controls__right">
+      <label class="who-select">
+        <span>I am</span>
+        <select id="who-select">
+          <option value="">— choose —</option>
+        </select>
+      </label>
+      <button id="export-btn" class="btn-export" type="button">Export progress</button>
+    </div>
+  </div>
+</nav>
+
+<main class="content">
+
+  <section id="member-view" class="view-panel">
+    <div id="member-folders" class="folders"></div>
+  </section>
+
+  <section id="phase-view" class="view-panel is-hidden">
+    <div id="phase-groups" class="phase-groups"></div>
+  </section>
+
+  <section id="week-view" class="view-panel is-hidden">
+    <div id="week-groups" class="phase-groups"></div>
+  </section>
+
+  <section class="ledger" aria-labelledby="shared-heading">
+    <h2 id="shared-heading" class="ledger__title">Shared Responsibilities <span class="ledger__note">— belongs to everyone, not one person</span></h2>
+    <ul id="shared-list" class="shared-list"></ul>
+  </section>
+
+  <section class="ledger" aria-labelledby="weekly-heading">
+    <h2 id="weekly-heading" class="ledger__title">Six-Week Log Book</h2>
+    <div class="table-wrap">
+      <table class="weekly-table" id="weekly-table">
+        <thead>
+          <tr>
+            <th>Week</th>
+            <th id="wcol-m1">Team Member 1</th>
+            <th id="wcol-m2">Team Member 2</th>
+            <th id="wcol-m3">Team Member 3</th>
+          </tr>
+        </thead>
+        <tbody id="weekly-table-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p><strong>Syncing progress with your team:</strong> checkmarks save to this browser instantly. To let the whole team see them, click <em>Export progress</em>, replace <code>data.json</code> in the repo with the downloaded file, then commit &amp; push. Everyone gets the update the next time they load the page.</p>
+  <p class="site-footer__meta" id="last-synced"></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
