@@ -5,9 +5,9 @@
     "weeks": 6
   },
   "members": [
-    { "id": "m1", "name": "Team Member 1", "role": "Lead: Data & SVM", "initial": "1", "accent": "rust" },
-    { "id": "m2", "name": "Team Member 2", "role": "Lead: Feature Engineering & k-NN", "initial": "2", "accent": "sage" },
-    { "id": "m3", "name": "Team Member 3", "role": "Lead: Decision Tree & Random Forest", "initial": "3", "accent": "slate" }
+    { "id": "m1", "name": "Zinnia", "role": "Lead: Data & SVM", "initial": "1", "accent": "rust" },
+    { "id": "m2", "name": "Madina", "role": "Lead: Feature Engineering & k-NN", "initial": "2", "accent": "sage" },
+    { "id": "m3", "name": "Bello", "role": "Lead: Decision Tree & Random Forest", "initial": "3", "accent": "slate" }
   ],
   "phases": [
     { "n": 1, "name": "Dataset" },
