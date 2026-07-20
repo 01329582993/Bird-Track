@@ -230,7 +230,9 @@
       tasks.forEach((t) => {
         const row = taskRow(t, { showOwner: true, showWeek: true });
         row.className = row.className.replace("task-row", "group-card__row").trim();
-        row.classList.add(isDone(t) ? "is-done" : "");
+        if (isDone(t)) {
+          row.classList.add("is-done");
+        }
         rows.appendChild(row);
       });
       card.appendChild(rows);
